@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,400&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://www.sciencenewsforstudents.org/wp-content/uploads/2020/09/1030_SS_Chemical.jpg);
+
+    /* background-image: url(https://wallpapercave.com/wp/wp2189205.jpg); */
+    background-image: url(https://um.ac.cd/wp-content/uploads/2020/12/labochimie.jpg);
+    background-size: cover;
+
+
+
+
+}
+
+section .color {
+    position: absolute;
+    filter: blur(440px);
+
+}
+
+section .color:nth-child(1) {
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: #ff359b;
+}
+
+section .color:nth-child(2) {
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: #fffd87;
+}
+
+section .color:nth-child(3) {
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    background: #00d2ff;
+}
+
+.box {
+    position: relative;
+}
+
+.box .square {
+    position: absolute;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    animation: animate 5s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    /* background: transparent; */
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+
+}
+
+.box .square:nth-child(1) {
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.box .square:nth-child(2) {
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+    /* color: pink; */
+
+}
+
+.box .square:nth-child(3) {
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+
+
+}
+
+.box .square:nth-child(4) {
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+
+}
+
+.box .square:nth-child(5) {
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+    border-color: #dda1bf;
+}
+
+.container {
+    width: 400px;
+    min-height: 450px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 25px 45px rgba(0, 20, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h1 {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+
+}
+
+.form h2 {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form h1::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -10px;
+    height: 4px;
+    background: #fff;
+
+}
+
+.form h2::before {
+    position: absolute;
+    content: '';
+    left: 85px;
+    bottom: -10px;
+    height: 4px;
+    background: #fff;
+
+}
+
+.form .inputbox {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.form .inputbox a {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 2px 20px;
+    border-radius: 200px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    /* font-family: 'Times New Roman', Times, serif; */
+    margin-top: -0px;
+    
+}
+
+.form .inputbox input[type="submit"] {
+    background: #fff;
+    color: #668;
+    cursor: pointer;
+    max-width: 100px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.forget {
+    margin-top: 5px;
+    color: rgb(59, 51, 21);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+
+.forget a {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.container .form .user-box input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #dfff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container .form .user-box label {
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    color: #dfff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+.container .form .user-box input:focus~label,
+.container .form .user-box input:valid~label {
+    top: -80px;
+    left: 0;
+    color: #f4680a;
+    font-size: 12px;
+}
+
+.form .inputbox a:hover {
+    background: #88d6ee;
+    color: rgb(236, 227, 227);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #85ec7c, 0 0 50px #d8db16,
+        0 0 100px #0a9397;
+}

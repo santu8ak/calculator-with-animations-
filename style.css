@@ -239,7 +239,7 @@ section .color:nth-child(3) {
 }
 
 .forget a {
-    color: rgb(0, 0, 0);
+    color: rgb(187, 127, 127);
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
 

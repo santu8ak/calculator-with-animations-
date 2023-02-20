@@ -222,6 +222,7 @@ section .color:nth-child(3) {
     
 }
 
+
 .form .inputbox input[type="submit"] {
     background: #fff;
     color: #668;
@@ -229,6 +230,14 @@ section .color:nth-child(3) {
     max-width: 100px;
     margin-bottom: 20px;
     font-weight: 600;
+}
+
+.form .inputbox a:hover {
+    background: #88d6ee;
+    color: rgb(236, 227, 227);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #85ec7c, 0 0 50px #d8db16,
+        0 0 100px #0a9397;
 }
 
 .forget {
@@ -284,10 +293,3 @@ section .color:nth-child(3) {
     font-size: 12px;
 }
 
-.form .inputbox a:hover {
-    background: #88d6ee;
-    color: rgb(236, 227, 227);
-    border-radius: 5px;
-    box-shadow: 0 0 5px #85ec7c, 0 0 50px #d8db16,
-        0 0 100px #0a9397;
-}
